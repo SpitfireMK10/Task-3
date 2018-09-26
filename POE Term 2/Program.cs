@@ -15,10 +15,11 @@ namespace POE_Term_2
         [STAThread]
         static void Main()
         {
-          
+            MapSize map = new MapSize();
+            map.Show();
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run();
         }
     }
 }

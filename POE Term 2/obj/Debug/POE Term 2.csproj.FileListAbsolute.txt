@@ -28,3 +28,4 @@ C:\Users\Peter\OneDrive\Game Development 1B\Task 3\POE Term 2 (Task 3)\POE Term 
 C:\Users\Peter\OneDrive\Game Development 1B\Task 3\POE Term 2 (Task 3)\POE Term 2\obj\Debug\POE Term 2.csproj.CoreCompileInputs.cache
 C:\Users\Peter\OneDrive\Game Development 1B\Task 3\POE Term 2 (Task 3)\POE Term 2\obj\Debug\POE Term 2.exe
 C:\Users\Peter\OneDrive\Game Development 1B\Task 3\POE Term 2 (Task 3)\POE Term 2\obj\Debug\POE Term 2.pdb
+C:\Users\Peter\OneDrive\Game Development 1B\Task 3\POE Term 2 (Task 3)\POE Term 2\obj\Debug\POE_Term_2.MapSize.resources

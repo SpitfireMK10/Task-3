@@ -15,11 +15,12 @@ namespace POE_Term_2
     
     public partial class Form1 : Form
     {
-        Map map = new Map(20, 20, 33, 10);
+        Map map;
+        public MapSize mapSize1;
         int Turn = 0;
         Random r = new Random();
 
-        const int SIZE = 45;
+        int SIZE = 45;
         public Form1()
         {
             InitializeComponent();         
@@ -27,6 +28,7 @@ namespace POE_Term_2
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            map = new Map(mapSize1.Size(), mapSize1.Size(), 33, 10);
         }
 
         private void timer1_Tick(object sender, EventArgs e)

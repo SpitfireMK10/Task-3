@@ -126,15 +126,15 @@ namespace POE_Term_2
         {
             if (u.GetType() == typeof(MeleeUnit))
             {
-                Health -= ((MeleeUnit)u).Attack;
+                ((MeleeUnit)u).health -= ((MeleeUnit)u).Attack;
             }
             else if (u.GetType() == typeof(RangedUnit))
             {
-                Health -= ((RangedUnit)u).attack;
+                ((RangedUnit)u).health -= ((RangedUnit)u).attack;
             }
             else if (u.GetType() == typeof(WizardUnit))
             {
-                Health -= ((WizardUnit)u).attack;
+                ((WizardUnit)u).health -= ((WizardUnit)u).attack;
             }
         }
         public override bool isDead()

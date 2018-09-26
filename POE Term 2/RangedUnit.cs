@@ -122,17 +122,17 @@ namespace POE_Term_2
 
         public override void combatWithUnit(Unit u)
         {
-            if (u.GetType() == typeof(RangedUnit))
+            if (u.GetType() == typeof(MeleeUnit))
             {
-                Health -= ((RangedUnit)u).Attack;
+                ((MeleeUnit)u).health -= ((MeleeUnit)u).attack;
             }
-            else if (u.GetType() == typeof(MeleeUnit))
+            else if (u.GetType() == typeof(RangedUnit))
             {
-                Health -= ((MeleeUnit)u).attack;
+                ((RangedUnit)u).health -= ((RangedUnit)u).attack;
             }
             else if (u.GetType() == typeof(WizardUnit))
             {
-                Health -= ((WizardUnit)u).attack;
+                ((WizardUnit)u).health -= ((WizardUnit)u).attack;
             }
         }
 
