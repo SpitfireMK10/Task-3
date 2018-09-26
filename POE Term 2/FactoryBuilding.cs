@@ -71,7 +71,7 @@ namespace POE_Term_2
             set { spawnPointY = value; }
         }
 
-        public FactoryBuilding(int X_position, int Y_position, int Health, int Faction1, string Symbol1, int unitType1, int productionRate, int spawnX, int spawnY)
+        public FactoryBuilding(int X_position, int Y_position, int Health, int Faction1, string Symbol1, int unitType1, int productionRate, int spawnX, int spawnY) // this is the constructor for the factory building
         {
             Xpos = X_position;
             Ypos = Y_position;
@@ -84,7 +84,7 @@ namespace POE_Term_2
             spawnPointY = spawnY;
         }
 
-        public override bool isDead()
+        public override bool isDead() // this will return true if the building has been destroyed
         {
             if (Health < 1)
             {
@@ -100,7 +100,7 @@ namespace POE_Term_2
             return "Factory Building: " + "\r\nX Position: " + Xpos + "\r\nY Position: " + Ypos + "\r\nHealth: " + Health + "\r\nFaction " + Faction + "\r\nSymbol: " + Symbol + "\r\nUnit Type: " + UnitType + "\r\nGame Ticks per production: " + GameTickPerProduction + "\r\nSpawn point X: " + SpawnPointX + "\r\nSpawn point X: " + SpawnPointY;
         }
 
-        public  Unit Spawner(int maxX, int maxY, int faction)
+        public  Unit Spawner(int maxX, int maxY, int faction) //this will spawn a unit if the parameters are met
         {
             Random r = new Random();
             MeleeUnit M = new MeleeUnit(r.Next(0, maxX), r.Next(0, maxY), r.Next(5, 10) * 10, r.Next(5, 20), 1, 1,faction, "M", "Knight");

@@ -65,7 +65,7 @@ namespace POE_Term_2
             set { name = value; }
         }
 
-        public WizardUnit(int X_position, int Y_position, int Health, int Attack, int Speed, int Attack_range, int Faction1, string Symbol1, string name1)
+        public WizardUnit(int X_position, int Y_position, int Health, int Attack, int Speed, int Attack_range, int Faction1, string Symbol1, string name1) // thos is the wizard constrctor
         {
             Xpos = X_position;
             Ypos = Y_position;
@@ -78,7 +78,7 @@ namespace POE_Term_2
             name = name1;
         }
 
-        public override bool withinAttackRange(Unit u)
+        public override bool withinAttackRange(Unit u) // this will see what enemies are in attack range
         {
             if (u.GetType() == typeof(WizardUnit))
             {
@@ -95,7 +95,7 @@ namespace POE_Term_2
             return false;
         }
 
-        public override void NewPos(Direction direction)
+        public override void NewPos(Direction direction) // this will get the new position for the unit to move to 
         {
             switch (direction)
             {
@@ -122,7 +122,7 @@ namespace POE_Term_2
             }
         }
 
-        public override void combatWithUnit(Unit u)
+        public override void combatWithUnit(Unit u) // this is the combat with units where it will decrease the enemies health from this units attack damage
         {
             if (u.GetType() == typeof(MeleeUnit))
             {
@@ -137,7 +137,7 @@ namespace POE_Term_2
                 ((WizardUnit)u).health -= ((WizardUnit)u).attack;
             }
         }
-        public override bool isDead()
+        public override bool isDead() // this will return true if the units health drops below 1
         {
             if (Health < 1)
             {
@@ -148,7 +148,7 @@ namespace POE_Term_2
                 return false;
         }
 
-        public override Unit UnitDistance(Unit[] units)
+        public override Unit UnitDistance(Unit[] units) // this will calculate the distance between this unit and the nemy unit
         {
             Unit closest = this;
             int closestDist = 50;
@@ -197,7 +197,7 @@ namespace POE_Term_2
             return "Name: " + name + "\r\nFaction: " + faction + "\r\nSymbol: " + Symbol + "\r\nRange: " + attackRange + "\r\nAttack Damage: " + attack + "\r\nHealth: " + health + "\r\nSpeed: " + speed + "\r\nY Postion: " + Xpos + "\r\nX Postion: " + Ypos;
         }
 
-        public Direction Directionto(Unit u)
+        public Direction Directionto(Unit u) // this will detect in which direction to move towards
         {
             if (u.GetType() == typeof(WizardUnit))
             {
@@ -226,7 +226,7 @@ namespace POE_Term_2
 
         }
 
-        private int DistanceTo(Unit u)
+        private int DistanceTo(Unit u) // this uses the manhatten distance method to calculate distance
         {
             if (u.GetType() == typeof(WizardUnit))
             {

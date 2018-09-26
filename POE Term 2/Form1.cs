@@ -28,7 +28,7 @@ namespace POE_Term_2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            map = new Map(mapSize1.Size(), mapSize1.Size(), 33, 10);
+            map = new Map(mapSize1.Size(), mapSize1.Size(), 33, 10); // this will set the map size to what size th player chose
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -39,7 +39,7 @@ namespace POE_Term_2
         }
 
 
-        private void DisplayMap()
+        private void DisplayMap() // this is the method that will erease and update the game map 
         {
             
             groupDisplay.Controls.Clear();
@@ -217,7 +217,7 @@ namespace POE_Term_2
             }
         }
 
-        private void UpdateMap()
+        private void UpdateMap() // this will cycle through all the units and buildisngs to see if they need to move and whether or not they have been killed in combat
         {
             foreach (Unit u in map.Units)
             {
@@ -430,7 +430,7 @@ namespace POE_Term_2
             #endregion
         }
 
-        public void Button_Click(object sender, EventArgs args)
+        public void Button_Click(object sender, EventArgs args) // this will see what button has been clicked and then display the information of that specific unit
         {
             int x = (((Button)sender).Location.X - groupDisplay.Location.X) / SIZE;
             int Y = (((Button)sender).Location.Y - groupDisplay.Location.Y) / SIZE;
@@ -491,17 +491,17 @@ namespace POE_Term_2
                 }
             }
         }
-        private void button1_Click_1(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e) // this will pause the game
         {
             timer1.Enabled = false;
         }
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) // this will unpause the game
         {
             timer1.Enabled = true;
 
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)  // when clicked this button will save the game
         {
             BinaryFormatter bf = new BinaryFormatter();
             FileStream fsout = new FileStream("GameSave.bat", FileMode.Create, FileAccess.Write, FileShare.None);
@@ -520,7 +520,7 @@ namespace POE_Term_2
             }
         }
 
-        private void btnLoad_Click(object sender, EventArgs e)
+        private void btnLoad_Click(object sender, EventArgs e)// this button will load the previously saved game
         {
             BinaryFormatter bf = new BinaryFormatter();
             FileStream fsin = new FileStream("GameSave.bat", FileMode.Open, FileAccess.Read, FileShare.None);

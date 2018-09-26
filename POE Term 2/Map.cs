@@ -29,7 +29,7 @@ namespace POE_Term_2
             set { buildings = value; }
         }
 
-        public Map(int maxX, int maxY, int numUnits , int numBuildings)
+        public Map(int maxX, int maxY, int numUnits , int numBuildings) // these will create the archer and melee units and place them within the units array 
         {
             int buildingX, buildingY;
             units = new Unit[numUnits];
@@ -68,7 +68,7 @@ namespace POE_Term_2
                 }
             }
 
-            for (int i =0; i<numBuildings; i++)
+            for (int i =0; i<numBuildings; i++) // these will create the buildings that will then be put into the buildings array 
             {
                 if(i<=5)
                 {

@@ -20,7 +20,7 @@ namespace POE_Term_2
             InitializeComponent();
         }
 
-        private void btnContinue_Click(object sender, EventArgs e)
+        private void btnContinue_Click(object sender, EventArgs e) //this will set the game size to 10
         {
             choice = 0;
             Size();
@@ -31,7 +31,7 @@ namespace POE_Term_2
         }
 
         
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //this will set the game size to 20
         {
             choice = 1;
             Size();
@@ -41,7 +41,7 @@ namespace POE_Term_2
             this.Hide();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) //this will set the game size to 30
         {
             choice = 2;
             Size();
@@ -51,7 +51,7 @@ namespace POE_Term_2
             this.Hide();
         }
 
-        public int Size()
+        public int Size() // this will determine which choice has been chosen and then assign a value to size 
         {
             int size;
 
@@ -68,6 +68,10 @@ namespace POE_Term_2
                 return size = 30;
             }           
         }
-    
+
+        private void MapSize_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

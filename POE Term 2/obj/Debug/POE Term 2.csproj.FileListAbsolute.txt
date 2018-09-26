@@ -29,3 +29,14 @@ C:\Users\Peter\OneDrive\Game Development 1B\Task 3\POE Term 2 (Task 3)\POE Term 
 C:\Users\Peter\OneDrive\Game Development 1B\Task 3\POE Term 2 (Task 3)\POE Term 2\obj\Debug\POE Term 2.exe
 C:\Users\Peter\OneDrive\Game Development 1B\Task 3\POE Term 2 (Task 3)\POE Term 2\obj\Debug\POE Term 2.pdb
 C:\Users\Peter\OneDrive\Game Development 1B\Task 3\POE Term 2 (Task 3)\POE Term 2\obj\Debug\POE_Term_2.MapSize.resources
+C:\Users\Peter\OneDrive\Game Development 1B\POE\Task 3\POE Term 2 (Task 3)\POE Term 2\bin\Debug\POE Term 2.exe.config
+C:\Users\Peter\OneDrive\Game Development 1B\POE\Task 3\POE Term 2 (Task 3)\POE Term 2\bin\Debug\POE Term 2.exe
+C:\Users\Peter\OneDrive\Game Development 1B\POE\Task 3\POE Term 2 (Task 3)\POE Term 2\bin\Debug\POE Term 2.pdb
+C:\Users\Peter\OneDrive\Game Development 1B\POE\Task 3\POE Term 2 (Task 3)\POE Term 2\obj\Debug\POE Term 2.csprojResolveAssemblyReference.cache
+C:\Users\Peter\OneDrive\Game Development 1B\POE\Task 3\POE Term 2 (Task 3)\POE Term 2\obj\Debug\POE_Term_2.Form1.resources
+C:\Users\Peter\OneDrive\Game Development 1B\POE\Task 3\POE Term 2 (Task 3)\POE Term 2\obj\Debug\POE_Term_2.MapSize.resources
+C:\Users\Peter\OneDrive\Game Development 1B\POE\Task 3\POE Term 2 (Task 3)\POE Term 2\obj\Debug\POE_Term_2.Properties.Resources.resources
+C:\Users\Peter\OneDrive\Game Development 1B\POE\Task 3\POE Term 2 (Task 3)\POE Term 2\obj\Debug\POE Term 2.csproj.GenerateResource.Cache
+C:\Users\Peter\OneDrive\Game Development 1B\POE\Task 3\POE Term 2 (Task 3)\POE Term 2\obj\Debug\POE Term 2.csproj.CoreCompileInputs.cache
+C:\Users\Peter\OneDrive\Game Development 1B\POE\Task 3\POE Term 2 (Task 3)\POE Term 2\obj\Debug\POE Term 2.exe
+C:\Users\Peter\OneDrive\Game Development 1B\POE\Task 3\POE Term 2 (Task 3)\POE Term 2\obj\Debug\POE Term 2.pdb

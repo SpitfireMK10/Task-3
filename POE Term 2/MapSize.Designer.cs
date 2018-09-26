@@ -95,6 +95,7 @@
             this.Controls.Add(this.label1);
             this.Name = "MapSize";
             this.Text = "MapSize";
+            this.Load += new System.EventHandler(this.MapSize_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

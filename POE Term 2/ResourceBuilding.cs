@@ -63,7 +63,7 @@ namespace POE_Term_2
             set { resourcesRemaining = value; }
         }
 
-        public ResourceBuilding(int X_position, int Y_position, int Health, int Faction1, string Symbol1, string resource, int productionRate, int remaining)
+        public ResourceBuilding(int X_position, int Y_position, int Health, int Faction1, string Symbol1, string resource, int productionRate, int remaining) // this is the constructor for the resource building
         {
             Xpos = X_position;
             Ypos = Y_position;
@@ -75,7 +75,7 @@ namespace POE_Term_2
             ResourcesRemaining = remaining;
         }
 
-        public override bool isDead()
+        public override bool isDead() // this will return true if the building has been destroyed
         {
             if (Health < 1)
             {
@@ -91,7 +91,7 @@ namespace POE_Term_2
             return "Resource Building: " + "\r\nX Position: " + Xpos + "\r\nY Position: " + Ypos + "\r\nHealth: " + Health + "\r\nFaction " + Faction + "\r\nSymbol: " + Symbol + "\r\nResource Type: " + ResourceType + "\r\nResource Per Game Tick: " + ResourcePerGameTick + "\r\nResources Remaining: " + ResourcesRemaining;
         }
 
-        public void ResourceGenerate()
+        public void ResourceGenerate() // this will detuct the resources from the mine
         {
             ResourcesRemaining = ResourcesRemaining - resourcePerGameTick;      
         }
